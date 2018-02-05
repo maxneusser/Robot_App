@@ -1,0 +1,10 @@
+
+*.d
+*.a
+*.buildinfo
+*.elf
+*.hex
+__vm/Upload.vmps.xml
+__vm/Compile.vmps.xml
+__vm/Configuration.Debug.vmps.xml
+.vs/Robot_plus/v14/.atsuo

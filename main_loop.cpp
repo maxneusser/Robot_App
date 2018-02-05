@@ -30,8 +30,9 @@ Servo myservo;
 
 main_loop()
 {
+	static boolean loop0 = true;
 	static int value;
-	  
+	  boolean state_change = false;
 	  myservo.attach(3);// attach servo on pin 3 to servo object
 	  
 	  static int delay_time = 100;
@@ -43,7 +44,11 @@ main_loop()
 	     delay_time = FAST_BLINK;
 	  else
 	     delay_time = SLOW_BLINK;
-	   Serial.print("Online! ");
+	  if ((state_change == true) || loop0 == true)
+	  {
+	     Serial.print("Main Menu!");
+	     state_change = false;
+	  }
 	  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
 	  //delay(delay_time);                       // wait for a second
 	  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
@@ -70,5 +75,5 @@ main_loop()
 			myservo.write(value--);   
 		 }
 	  }
-
+   loop0=false;
 }
