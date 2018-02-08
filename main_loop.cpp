@@ -32,6 +32,9 @@ main_loop()
 {
 	static boolean loop0 = true;
 	static int value;
+	if (loop0)
+	   value = 90;
+	//myservo.write(value++); 
 	  boolean state_change = false;
 	  myservo.attach(3);// attach servo on pin 3 to servo object
 	  
@@ -46,8 +49,11 @@ main_loop()
 	     delay_time = SLOW_BLINK;
 	  if ((state_change == true) || loop0 == true)
 	  {
-	     Serial.print("Main Menu!");
+	     
+		 Serial.print("Main Menu!");
 	     state_change = false;
+		 Serial.print("value is: ");
+		 Serial.print(value);
 	  }
 	  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
 	  //delay(delay_time);                       // wait for a second
@@ -67,6 +73,7 @@ main_loop()
 		 if(incomingByte == 43)
 		 {
 		 	state = slow;
+			 value++;
 			myservo.write(value++);   
 		 }
 		 else if(incomingByte == 45)

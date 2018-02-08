@@ -8,3 +8,6 @@ __vm/Upload.vmps.xml
 __vm/Compile.vmps.xml
 __vm/Configuration.Debug.vmps.xml
 .vs/Robot_plus/v14/.atsuo
+__vm/.Robot_App.vsarduino.h
+__vm/.Robot_App.vsarduino.h
+*.o
