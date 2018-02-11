@@ -1,32 +1,14 @@
-// 
-// 
-// 
-
-#include "main_loop.h"
 #include <Arduino.h>
-#include <Servo.h>
+#include "main_loop.h"
+#include "Servo.h"
+#include "Mode.h"
 #define FAST_BLINK 100
 #define SLOW_BLINK 1000
 
 enum state_type{fast,slow};
 
-
+Mode mymode;
 Servo myservo;
-
-/*class Servo
-{
-	public:
-	  void Servo();
-	  uint8_t attach(int pin);           // attach the given pin to the next free channel, sets pinMode, returns channel number or 0 if failure
-	  uint8_t attach(int pin, int min, int max); // as above but also sets min and max values for writes.
-	  void detach();
-	  void write(int value);             // if value is < 200 its treated as an angle, otherwise as pulse width in microseconds
-	  void writeMicroseconds(int value); // Write pulse width in microseconds
-	  int read();                        // returns current pulse width as an angle between 0 and 180 degrees
-	  int readMicroseconds();            // returns current pulse width in microseconds for this servo (was read_us() in first release)
-	  bool attached();                   // return true if this servo is attached, otherwise false
-};*/
-
 
 main_loop()
 {
@@ -50,7 +32,7 @@ main_loop()
 	  if ((state_change == true) || loop0 == true)
 	  {
 	     
-		 Serial.print("Main Menu!");
+		 mymode.main_menu();
 	     state_change = false;
 		 Serial.print("value is: ");
 		 Serial.print(value);

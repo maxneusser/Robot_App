@@ -9,22 +9,27 @@
 #ifndef __MODE_H__
 #define __MODE_H__
 
+#define TEXT_MAIN_MENU "\
+Main Menu:\n\
+Please Choose Mode:\n\
+1 Servo Mode\n\
+"
 
-class mode
+class Mode
 {
 //variables
-public:
+public: 
 protected:
 private:
 
 //functions
 public:
-	mode();
-	~mode();
+	Mode();
+	void main_menu();
 protected:
 private:
-	mode( const mode &c );
-	mode& operator=( const mode &c );
+//	mode( const mode &c );
+//	mode& operator=( const mode &c );
 
 }; //mode
 

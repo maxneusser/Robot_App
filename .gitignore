@@ -11,3 +11,4 @@ __vm/Configuration.Debug.vmps.xml
 __vm/.Robot_App.vsarduino.h
 __vm/.Robot_App.vsarduino.h
 *.o
+__vm/Configuration.Release.vmps.xml
