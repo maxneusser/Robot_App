@@ -5,17 +5,15 @@
 * Author: Max
 */
 
-#include <Arduino.h>
+
 #include "mode.h"
 
 // default constructor
-Mode::Mode()
+mode::mode()
 {
-	
 } //mode
 
-void Mode::main_menu()
+// default destructor
+mode::~mode()
 {
-	Serial.print(TEXT_MAIN_MENU);
-}
-
+} //~mode
