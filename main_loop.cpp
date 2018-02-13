@@ -38,10 +38,12 @@ main_loop()
 		 Serial.print(value);
 	  }
 	  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-	  //delay(delay_time);                       // wait for a second
+	  delay(delay_time);                       // wait for a second
 	  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-	  //delay(delay_time);                       // wait for a second
+	  delay(delay_time);                       // wait for a second
 	  //Serial.println("loop finished");
+	  Serial.print(myservo.read());
+      Serial.print("\n");	  
 	  if (Serial.available() > 0) 
 	  {
 		  // read the incoming byte:

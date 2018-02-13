@@ -5,6 +5,7 @@
 * Author: Max
 */
 
+//enum mode_t {main;servo};
 
 #ifndef __MODE_H__
 #define __MODE_H__
@@ -19,6 +20,7 @@ class Mode
 {
 //variables
 public: 
+  // mode_t current_mode;
 protected:
 private:
 
