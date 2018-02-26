@@ -258,6 +258,12 @@
     <Compile Include="servo.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="Sonar.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Sonar.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="__vm\.Robot_App.vsarduino.h">
       <SubType>compile</SubType>
     </Compile>

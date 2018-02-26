@@ -50,6 +50,9 @@
 
 #include <inttypes.h>
 
+
+class myservo;
+
 /* 
  * Defines for 16 bit timers used with  Servo library 
  *
@@ -63,6 +66,7 @@
  * --------------------
  */
 
+#define STANDARD_CENTER 90
 // Say which 16 bit timers can be used and in what order
 #if defined(__AVR_ATmega1280__) || defined(__AVR_ATmega2560__)
 #define _useTimer5
