@@ -16,6 +16,10 @@ Mode::Mode()
 
 void Mode::main_menu()
 {
-	Serial.print(TEXT_MAIN_MENU);
+	//Serial.print(TEXT_MAIN_MENU);
 }
 
+void Mode::cyclic()
+{
+
+}

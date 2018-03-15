@@ -49,9 +49,7 @@
 #define Servo_h
 
 #include <inttypes.h>
-
-
-class myservo;
+#include <Arduino.h>
 
 /* 
  * Defines for 16 bit timers used with  Servo library 

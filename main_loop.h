@@ -1,9 +1,12 @@
-// main_function.h
-
-
-
 #ifndef _MAIN_FUNCTION_h
 #define _MAIN_FUNCTION_h
+#include <Arduino.h>
+#include "main_loop.h"
+#include "Servo.h"
+#include "Mode.h"
+#include "UserInterface.h"
+#include "Com.h"
+#include "Sonar.h"
 
 extern main_loop(void);
 

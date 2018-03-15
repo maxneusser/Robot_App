@@ -27,6 +27,7 @@ private:
 //functions
 public:
 	Mode();
+	void cyclic();
 	void main_menu();
 protected:
 private:

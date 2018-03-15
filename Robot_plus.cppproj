@@ -234,6 +234,12 @@
     <Folder Include="__vm\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Com.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Com.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="init_robot.cpp">
       <SubType>compile</SubType>
     </Compile>
@@ -262,6 +268,12 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Sonar.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="UserInterface.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="UserInterface.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="__vm\.Robot_App.vsarduino.h">

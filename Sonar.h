@@ -8,7 +8,8 @@
 
 #ifndef __SONAR_H__
 #define __SONAR_H__
-
+#include <Arduino.h>
+#include "com.h"
 
 class Sonar
 {
@@ -19,10 +20,12 @@ private:
 
 //functions
 public:
+    cyclic();
 	Sonar();
 	~Sonar();
 protected:
 private:
+	Distance_test();
 	Sonar( const Sonar &c );
 	Sonar& operator=( const Sonar &c );
 
